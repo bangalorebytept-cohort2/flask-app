@@ -6,7 +6,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 @app.route('/')
 def index():
-	return 'Welcome to Flask App'
+	return render_template('index.html')
+
 
 
 if __name__ == '__main__':
